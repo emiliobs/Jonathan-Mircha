@@ -1,0 +1,200 @@
+/*Maquetar: Estilos para etiquetes html, id´s, clases
+	de forma alfabetica*/
+.
+{
+
+	border: 0;
+	margin: 0;
+}
+
+/*Incluir tipografia*/
+@font-face
+{
+	/*Entre comillas porque no es una fuente segura, es decir
+	como es externa no es una fuente predeterminada*/
+	font-family: "Chalet";
+	src: url("../fonts/Chalet.eot");
+	/*Para que el tipo de letra lo reconoscan todos los navegadores
+	iefix para navegadores viejitos*/
+	src: url("../fonts/Chalet.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/Chalet.woff") format("woff"),
+		 url("../fonts/Chalet.ttf") format("truetype"),
+		 url("../fonts/Chalet.svg#Chalet") format("svg");
+
+}
+
+/*Estilos para los enlaces*/
+a
+{
+	color: #F60;
+	text-decoration: none;
+}
+
+a:hover
+{
+
+	color: #7BBDF5;
+}
+body
+{
+
+	background: #FFF;
+	color: #212121;
+	font-family: "Chalet", Helvetica, Verdana;
+	font-size: 16px;
+
+}
+
+fieldset
+{
+	border: .1em solid #F60;
+	border-radius: .5em;
+	/*Espacio de la linea del fielset a los elementos*/
+	padding: 1em;
+
+}
+
+/*Para esconder el formulario y despues mostrarlo con efecto jquery fadeIn*/
+form
+{
+	display: none;
+}
+
+/*Estilo para el div de los formularios, margen para separar los elementos*/
+form div
+{
+	margin: .5em;
+}
+
+/*Estilos para los inputs check y radio*/
+input[type="checkbox"], input[type="radio"], select
+{
+	background: #EEE;
+	cursor: pointer;
+}
+
+/*Estilos para los inputs calendario, correo, numero*/
+input[type="date"], input[type="email"], input[type="numbre"], input[type="text"]
+{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60;
+	font-size: 1em;
+	padding: .25em;
+
+}
+
+/*Estilos para los inputs pseudoclase FOCUS*/
+input[type="date"]:focus, input[type="email"]:focus, input[type="numbre"]:focus, input[type="text"]:focus
+{
+	background: #C6ECF9;
+	
+}
+
+/*Estilos para input file*/
+input[type="file"]
+{
+	cursor: pointer;
+	opacity: 0;
+	/*Para que se vea en IE anteriores*/
+	filter: alpha(opacity=0);
+	width: 150px;
+}
+
+/*Estilo para el boton submit*/
+input[type="submit"]
+{
+	background: #FF9A55;
+	border-radius: 0 .25em;
+	color: #500;
+	font-family: "Chalet";
+	font-size: 1.5em;
+
+}
+
+/*Estilo para las etiquetas label*/
+label
+{
+	cursor: pointer;
+	font-size: 1.2em;
+}
+/*Estilo para el boton submit pseudoclase HOVER*/
+input[type="submit"]:hover
+{
+	background: #7BBFD5;
+	border-radius: .25em 0;
+	color: #000;
+	cursor: pointer;
+
+}
+
+
+/*padding y margin siempre se le suman al width general*/
+nav, #principal
+{
+	/*Estilos validos para todos los navegadores: IE, MOZ, OPERA, ZAFARI*/
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 1em;
+	margin: 0.25em;
+	text-align: left;
+	width: 20%;
+	vertical-align: top;
+
+}
+
+
+/*Quitar el formato a las listas del menu (viñetas) */
+ul
+{
+	list-style: none;
+}
+
+#contenido
+{
+	/*Para centrar el contenido en la pag*/
+	margin: 0 auto;
+	text-align: center;
+	/*background: green;*/
+}
+
+#principal
+{
+	/*background: red;*/
+	width: 75%;
+}
+
+.adjuntar-archivo
+{
+	/*Para no repetir la imagen de fondo, con la colocacion vertical al 100%, posicion eje vertical de -3px*/
+	background: #EEE url(../img/boton-buscar.png) no-repeat 100% -3px;
+	border: thin solid #F60;
+	display: inline;
+	height: 290px;
+	text-align: right;
+
+}
+
+.adjuntar-archivo:hover
+{
+	/*Para no repetir la imagen de fondo, con la colocacion vertical al 100%, posicion eje vertical de -3px*/
+	background: #C6ECF9 url(../img/boton-buscar2.png) no-repeat 100% -3px;
+	cursor: pointer;
+}
+
+.cambio
+{	
+	/*Instruccion que no está estandarizada para los navegadores*/
+	-ms-transition: all 1.5s ease-out;
+	-moz-transition: all 1.5s ease-out;
+	-o-transition: all 1.5s ease-out;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+}
+
+
+

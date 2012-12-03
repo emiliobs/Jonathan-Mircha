@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Sitio con Responsive Web Design en HTML5, CSS3 y jQuery</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Bienvenidos a mi portafolio web hecho en HTML5, CSS3 jQuery =)" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css" />
+	<script src="js/modernizr.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]--> 
+</head>
+<body>
+	<!--
+	Para crear un favicon.ico, realizar el diseño en photoshop e ir a la URL. Tamaño 16 x 16px
+	http://www.convertico.com/ convierte de png, img -> ico
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"  />
+
+	***********************************************************************************
+	Humanstxt, es un archivo de texto plano para hacer referencia de los creadores de la pagina. 
+	La estructura es la sig:
+
+	/*Titulo de la pagina. - http://dominio.com*/
+	/*TEAM*/
+		Creator: Miguel Briones
+		Contact: migg.briones [at] gmail.com
+		Twitter: @migbriones
+		From:	Tuxtla Gutierrez city, Mexico
+
+	/*IN MEMORIAL*/
+		Familia
+
+	/*THANKS*/
+		Eduardo, Nolberto, Efrain, Estephany
+		UNACH http://unach.mx
+
+	/*SITE*/
+		Last update: 2012/11/22
+		Language: Español
+		Standars: HTML5, CSS3, JavaScript
+		Components: jQuery
+		Software: SublimeText2, Notepad ++, Adobe Suit CS5 (Photoshop)
+	
+	
+	Mandar a llamar desde el header
+	<link rel="author" type="text/plain" href="humans.txt"
+	Fuente: http://humanstxt.org
+
+	***********************************************************************************
+	
+	Sitemap.xml Es un archivo para realizar una buena practica de SEO(search engine optimization). Posicionar nuestro sitio web
+	La estructura es la siguiente:
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  
+		<url><loc>http://sudominio.com/index.html  </loc></url>
+		<url><loc>http://sudominio.com/inicio.html  </loc></url>
+		<url><loc>http://sudominio.com/servicios.html  </loc></url>
+		<url><loc>http://sudominio.com/contacto.html  </loc></url>
+	</urlset>
+
+	Nota: No se manda a llamar desde el header
+	Fuente: http://www.sitemaps.org/es
+
+	***********************************************************************************
+	Pagina para ver el porcentaje de usuarios q utilizan ie6
+	http://www.ie6countdown.com/#list
+	-->
+
+	<header>
+		<h1>
+			<a href="index.html">
+				<!--<img class="fade" src="img/bextlan-logo.png" alt="Bextlan.com|Lugar de bits, vectores y pixeles">-->
+				<img class="fade" src="img/bextlan-logo.png" >
+			</a>
+		</h1>
+
+		<nav>
+			<ul>
+				<li> <a href="index.html">Inicio</a> </li>
+				<li> <a href="acerca.html">Acerca</a> </li>
+				<li> <a href="servicios.html">Servicios</a> </li>
+				<li> <a href="trabajos.html">Trabajos</a> </li>
+				<li> <a href="contacto.html">Contacto</a> </li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<section id="contenido">
+		<section id="principal">
+			<article id="galeria-inico">
+				Aqui habra una galeria con jQuery
+			</article>	
+		</section>
+
+		<aside>
+			Widgets Sociales
+		</aside>
+	</section>
+
+	<footer>
+		Aprendiendo HTML5, CSS3, jQuery y Responsive Web Design con <a rel="author" href="https://twitter.com/MigBriones" target="_blank">@MigBriones</a>
+	</footer>
+	
+
+</body>
+</html>

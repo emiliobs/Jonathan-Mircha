@@ -1,0 +1,151 @@
+*
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #212121 url(../img/fondo.png);
+	color: #FFF;
+	font-family: Helvetica, Verdana;
+	font-size: 1em;
+}
+
+a
+{
+	color: #57ABB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #F60;
+}
+
+figcaption
+{
+	font-size: 0.85em;
+	padding: 0.25em;
+	text-align: center;
+}
+
+img,video
+{
+	max-width: 100%;
+}
+
+header,section#contenido, footer
+{
+	background: #FFF url(../img/fondo-interno.jpg);
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;
+}
+
+header h1, nav
+{
+	display: inline-block;;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+
+}
+
+nav a
+{
+	background: #FFF;
+	border: 0.1em solid #57ABB8;
+	border-radius: 0.25em;
+	color: #F60;
+	display: block;
+	font-family: Helvetica,Verdana;
+	font-size: 1.4em;
+	padding: 0.2em;
+	-moz-transition: all 1s ease-in;
+	-webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+nav a:hover
+{
+	background: #212121;
+	border: 0.1em dashed #F60;
+	border-radius: 0 0.5em 0 0.5em;
+	color: #FFF;
+	-moz-transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+section#principal, aside
+{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%;
+}
+
+article#galeria-inicio
+{
+	border-radius: 0.5em;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: left;
+	width: 95%;
+}
+
+aside
+{
+	width: 30%;
+}
+
+aside img
+{
+	border-radius: 0.5em;
+}
+
+footer
+{
+	color: #000;
+	font-size: 0.85em;
+	padding: 0.75em 0;
+}
+
+.fade
+{
+	-moz-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	opacity: 1;
+	filter:alpha(opacity=10);
+}
+
+.fade:hover
+{
+	-moz-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	opacity:0.7;
+	filter:alpha(opacity=7);
+}
+
+
+/*Minuto 53:40 del video 5*/
